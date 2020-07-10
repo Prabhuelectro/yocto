@@ -1,4 +1,6 @@
-sudo apt install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm python -y
+sudo apt-get update -y
+
+sudo apt install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm python python3 -y
 
 source ./oe-init-build-env rpi64
 
