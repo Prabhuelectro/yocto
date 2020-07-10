@@ -1,10 +1,7 @@
 language: cpp
-sudo: required
 dist: bionic
 compiler:
 - gcc
-os:
-- linux
 script:
   chmod +x rpi3-64.sh && ./rpi3-64.sh
 after_success:
