@@ -1,0 +1,26 @@
+language: cpp,c
+
+sudo: required
+
+dist: bionic
+
+compiler:
+- gcc
+
+os:
+- linux
+
+script:
+	chmod +x rpi3-64.sh
+	./rpi3-64.sh
+
+after_success:
+	echo "Success"
+
+deploy:
+  provider: releases
+  api_key: "571b515e75fabb602ec0953429c5750a6f0ccd71"
+  file: "rpi64/tmp/deploy/images/raspberrypi3-64/core-image-minimal-raspberrypi3-64.rpi-sdimg"
+  skip_cleanup: true
+  on:
+    tags: true
