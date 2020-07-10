@@ -1,4 +1,4 @@
-language: cpp,c
+language: cpp
 sudo: required
 dist: bionic
 compiler:
