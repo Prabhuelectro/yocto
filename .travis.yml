@@ -6,10 +6,10 @@ compiler:
 os:
 - linux
 script:
-	chmod +x rpi3-64.sh
-	./rpi3-64.sh
+  chmod +x rpi3-64.sh
+  ./rpi3-64.sh
 after_success:
-	echo "Success"
+  echo "Success"
 deploy:
   provider: releases
   api_key: "571b515e75fabb602ec0953429c5750a6f0ccd71"
