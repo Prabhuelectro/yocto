@@ -6,8 +6,7 @@ compiler:
 os:
 - linux
 script:
-  chmod +x rpi3-64.sh
-  ./rpi3-64.sh
+  chmod +x rpi3-64.sh && ./rpi3-64.sh
 after_success:
   echo "Success"
 deploy:
