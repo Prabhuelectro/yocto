@@ -2,9 +2,8 @@ language: cpp
 dist: bionic
 compiler:
 - gcc
-install: travis_wait 180 bitbake
 script:
-  chmod +x rpi3-64.sh && ./rpi3-64.sh
+  chmod +x rpi3-64.sh && ./rpi3-64.sh | install: travis_wait 180 bitbake
 after_success:
   echo "Success"
 deploy:
