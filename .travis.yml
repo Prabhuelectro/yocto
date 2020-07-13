@@ -2,6 +2,7 @@ language: cpp
 dist: bionic
 compiler:
 - gcc
+install: travis_wait 180 bitbake
 script:
   chmod +x rpi3-64.sh && ./rpi3-64.sh
 after_success:
