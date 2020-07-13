@@ -21,6 +21,6 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       with:
-        name: SD_Card_Image
+        name: RPI_3_64Bit_Image
         path: rpi64/tmp/deploy/images/raspberrypi3-64/core-image-minimal-raspberrypi3-64.rpi-sdimg
 
